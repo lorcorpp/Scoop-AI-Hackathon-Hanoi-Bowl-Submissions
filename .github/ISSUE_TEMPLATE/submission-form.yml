@@ -1,0 +1,58 @@
+name: Hackathon Submission Form
+description: Submit your hackathon project details
+title: "[Submission] Team Name: <Insert Team Name>"
+labels: ["submission"]
+assignees:
+  - lorcorpp
+body:
+  - type: input
+    id: team-name
+    attributes:
+      label: Team Name
+      description: Enter your team name.
+      placeholder: Example: Team Awesome
+    validations:
+      required: true
+  - type: input
+    id: repo-link
+    attributes:
+      label: GitHub Repository Link
+      description: Provide the link to your project’s GitHub repository.
+      placeholder: https://github.com/username/repo
+    validations:
+      required: true
+  - type: input
+    id: demo-link
+    attributes:
+      label: Demo Link
+      description: Provide a link to your demo (e.g., deployed app, YouTube video).
+      placeholder: https://youtu.be/abc123 or https://myapp.vercel.app
+    validations:
+      required: true
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Briefly describe your project (e.g., problem it solves, features).
+      placeholder: Our project is a web app that...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Project Category
+      description: Select the category that best fits your project.
+      options:
+        - Productivity Agent  
+        - MCP Server
+        - Prediction Market
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: Please confirm you agree to the hackathon rules.
+      options:
+        - label: I agree to the hackathon rules and guidelines.
+          required: true
