@@ -10,7 +10,7 @@ body:
     attributes:
       label: Team Name
       description: Enter your team name.
-      placeholder: Example: Team Awesome
+      placeholder: "Example: Team Awesome"
     validations:
       required: true
   - type: input
