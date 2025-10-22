@@ -1,0 +1,1 @@
+# Scoop-AI-Hackathon-Hanoi-Bowl-Submissions
